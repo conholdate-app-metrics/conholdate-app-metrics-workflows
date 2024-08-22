@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
         with:
             repository: conholdate-app-metrics/conholdate-app-metrics
-            token: ${{ secrets.REP
+            token: ${{ secrets.REPO_TOKEN }}
             ref: live
             submodules: true  # Fetch Hugo themes
             fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
