@@ -62,7 +62,7 @@ jobs:
       #  run: hugo --config "./config/conholdate-app-qa.toml" deploy --target "Staging" --invalidateCDN --maxDeletes 256 
       - name: Sync to Ceph S3
         run: |
-          aws s3 sync ./public/ s3://qa-metrics-conholdate-app.s3-website-qa.dynabic.com/ \
+          aws s3 sync ./public/ s3://qa-metrics-conholdate-app/ \
             --endpoint-url https://s3-qa.dynabic.com \
             --acl public-read \
             --delete
