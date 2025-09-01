@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: metrics.conholdate.app-qa
+name: metrics.conholdate.app-ceph-qa
 
 # Controls when the action will run. 
 on:
@@ -76,6 +76,6 @@ jobs:
         run: |
            curl -siG \
             -H "X-Api-Key: ${{ secrets.BUNNY_API_KEY }}" \
-            --data-urlencode "url=https://qa-metrics-conholdate-app.s3-website-qa.dynabic.com/" \
+            --data-urlencode "url=https://qa-metrics.conholdate.app/" \
             "https://api.dynabic.com/bn/purge?async=true"
  
